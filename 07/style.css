@@ -1,0 +1,651 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+header {
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #F8F8FF;
+    gap: 25px;
+}
+
+header::before {
+    content: "";
+    background: url(./arquivos/img-top.svg) no-repeat;
+    width: 394px;
+    height: 332px;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+header::after {
+    content: "";
+    background: url(./arquivos/img-bottom.svg) no-repeat;
+    width: 414px;
+    height: 318px;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+header .text {
+    max-width: 750px;
+    text-align: center;
+}
+
+header .text>span {
+    color: #E45858;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header .text h1>span {
+    color: #6246EA;
+}
+
+.location {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.location i {
+    font-size: 1.3rem;
+    color: #E45858;
+    padding: 0 8px 0 8px;
+}
+
+.location form {
+    /* width: 50%; */
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    background-color: #FFFFFF;
+    justify-content: center;
+}
+
+.location form .searchByName {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    background-color: #F4F4FF;
+    gap: 2px;
+    padding: 5px;
+    border-radius: .3rem;
+}
+
+.location form .searchByCity {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background-color: #F4F4FF;
+    padding: 5px;
+    border-radius: .3rem;
+}
+
+.location form .btnSubmit {
+    width: 170px;
+    border: none;
+    color: #ffffff;
+    background-color: #6246EA;
+    cursor: pointer;
+    border-radius: .3rem;
+    padding: 2px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.location form .searchByName input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 8px;
+    background-color: #F4F4FF;
+    border: none;
+    font-size: 1rem;
+}
+
+.location form .searchByCity select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    /* padding: 8px; */
+    background-color: #F4F4FF;
+    font-size: 1rem
+}
+
+main {
+    margin: 50px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-information {
+    padding: 10px 10px
+}
+
+.cards-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-header h3 {
+    font-size: 1.6rem;
+}
+
+.list-or-map {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid #cccccc62;
+    border-radius: 10px;
+}
+
+.list-or-map .list {
+    width: 100px;
+    padding: 6px 0;
+    background-color: #6246EA;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.list-or-map .map {
+    width: 100px;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6246EA;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.cards-body {
+    margin: 10px 0;
+}
+
+.cards {
+    max-width: 1550px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    margin: 30px 0;
+    padding: 0 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    /* width: 384px; */
+    width: 100%;
+    height: 153px;
+    object-fit: cover;
+}
+
+.card h4 {
+    padding: 10px 15px 5px 15px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    padding: 2px 15px;
+    font-size: 1rem;
+    margin: 2px 0;
+    line-height: 25px;
+    ;
+}
+
+.card span {
+    padding: 2px 12px;
+    font-size: 1.1rem;
+}
+
+.card span i {
+    padding: 2px 5px;
+    color: #E45858;
+}
+
+@media (max-width: 1716px) {
+    .location form .btnSubmit {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 1316px) {
+    .location form {
+        width: 70%;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 985px) {
+
+    .location {
+        width: 80%;
+    }
+
+    .location i {
+        font-size: 1rem;
+        color: #E45858;
+        padding: 0 8px 0 8px;
+    }
+
+    .location form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+
+
+    .location form .searchByName {
+        width: 240px;
+        font-size: .8rem;
+        height: 35px;
+
+    }
+
+    .location form .searchByCity select {
+        font-size: 0.8rem;
+    }
+
+    .location form .searchByCity {
+        width: 240px;
+        height: 35px;
+
+    }
+
+    .location form .btnSubmit {
+        width: 140px;
+        height: 35px;
+        font-size: .7rem;
+    }
+}
+
+
+@media (max-width: 840px) {
+
+    header::before {
+        width: 400px;
+        height: 400px;
+        background-image: url('./arquivos/img-top.svg');
+        background-size: 400px;
+    }
+
+    header::after {
+        width: 350px;
+        height: 300px;
+        background-image: url('./arquivos/img-bottom.png');
+        background-size: 400px;
+    }
+
+    header {
+        height: 600px;
+    }
+
+    header .text {
+        width: 500px;
+        z-index: 1000;
+    }
+
+    header .text>span {
+        font-size: 1rem;
+    }
+
+    header .text h1 {
+        font-size: 2.3rem;
+    }
+
+    .location form .searchByName {
+        width: 220px;
+    }
+
+    .location form .searchByName input {
+        font-size: .9rem;
+    }
+
+    .location form .searchByCity select {
+        font-size: 0.8rem;
+    }
+
+    .location form .searchByCity {
+        width: 220px;
+    }
+
+    .location form .btnSubmit {
+        width: 150px;
+        font-size: .6rem;
+    }
+
+    .cards-body .cards .card h4{
+        font-size: 1rem;
+    }
+
+    .cards-body .cards .card p{
+        font-size: .9rem;
+    }
+
+    .cards-body .cards .card span{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header::before {
+        width: 400px;
+        height: 400px;
+        background-image: url('./arquivos/img-top.svg');
+        background-size: 400px;
+    }
+
+    header::after {
+        width: 380px;
+        height: 300px;
+        background-image: url('./arquivos/img-bottom.png');
+        background-size: 400px;
+    }
+
+    header {
+        height: 600px;
+    }
+
+    header .text {
+        width: auto;
+        z-index: 1000;
+    }
+
+    header .text>span {
+        font-size: 1rem;
+    }
+
+    header .text h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .location form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .location form .searchByName {
+        width: 200px;
+    }
+
+    .location form .searchByCity {
+        width: 200px;
+    }
+
+    .location form i {
+        padding: 0;
+    }
+
+    .location form .searchByName input {
+        font-size: 0.7rem;
+    }
+
+    .location form .searchByCity select {
+        font-size: 0.7rem;
+    }
+
+    .location form .btnSubmit {
+        width: 100px;
+        font-weight: bold;
+        font-size: .5rem;
+    }
+
+
+    .cards-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .cards-header .list-or-map .list,
+    .cards-header .list-or-map .map {
+        width: 70px;
+        font-size: .7rem;
+    }
+
+    .cards-body .cards {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+
+}
+
+
+@media (max-width: 530px) {
+
+
+    .location form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location form .btnSubmit{
+        width: 100%;
+        font-size: .4rem;
+        grid-column: 1 / 2;
+    }
+
+
+    header::before {
+        width: 300px;
+        height: 300px;
+        background-image: url('./arquivos/img-top.svg');
+        background-size: 300px;
+    }
+
+    header::after {
+        width: 300px;
+        height: 230px;
+        background-image: url('./arquivos/img-bottom.png');
+        background-size: 300px;
+    }
+
+    header {
+        height: 600px;
+    }
+
+    header .text {
+        z-index: 1000;
+    }
+
+    header .text>span {
+        font-size: 1rem;
+    }
+
+    header .text h1 {
+        font-size: 1.6rem;
+    }
+
+    .location {
+        width: 90%;
+    }
+
+    .location form {
+        width: 100%;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .location form i {
+        font-size: .8rem;
+    }
+
+    .location form .searchByName {
+        width: 200px;
+    }
+
+    .location form .searchByCity {
+        width: 200px;
+    }
+
+    .location form .searchByName input {
+        width: 90%;
+    }
+
+    .location form .searchByCity select {
+        width: 90%;
+    }
+
+    .location form .btnSubmit {
+        width: 100px;
+        font-size: .5rem;
+        padding: 3px;
+    }
+
+    .cards-header h3 {
+        font-size: 1rem;
+    }
+
+    .cards-header .list-or-map .list,
+    .cards-header .list-or-map .map {
+        width: 60px;
+        font-size: .6rem;
+    }
+
+    .cards-body .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+
+    header {
+        height: 600px;
+    }
+
+    header .text {
+        z-index: 1000;
+    }
+
+    header .text>span {
+        font-size: 1rem;
+    }
+
+    header .text h1 {
+        font-size: 1.6rem;
+    }
+
+    .location {
+        width: 90%;
+    }
+
+    .location form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .location form i {
+        font-size: .8rem;
+    }
+
+    .location form .searchByName {
+        width: 120px;
+    }
+
+    .location form .searchByCity {
+        width: 120px;
+    }
+
+    .location form .searchByName input {
+        width: 90px;
+    }
+
+    .location form .searchByCity select {
+        width: 90px;
+    }
+
+    .location form .btnSubmit {
+        width: 50px;
+        font-size: .5rem;
+        padding: 3px;
+    }
+}
+
+@media (max-width: 280px){
+
+    header::before{
+        width: 250px;
+        height: 230px;
+        background-image: url('./arquivos/img-top.png');
+        background-size: 250px;
+    }
+
+    header .text h1{
+        font-size: .9rem;
+    }
+
+    .location form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location form .searchByName,
+    .location form .searchByCity,
+    .location form .btnSubmit{
+        font-size: .6rem;
+        height: 23px;
+    }
+
+    .location form i{
+        font-size: .6rem;
+    }
+
+
+    .location form .searchByName input{
+        width: 100%;
+    }
+
+    .location form .searchByCity select{
+        width: 100%;
+    }
+
+    .location form .btnSubmit{
+        width: 100%;
+        font-size: .4rem;
+        grid-column: 1/3;
+    }
+}

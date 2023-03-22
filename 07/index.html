@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="text">
+            <span>Find Your Block</span>
+            <h1>Encontre os <span>melhores blocos</span> de carnaval de 2023</h1>
+        </div>
+        <div class="location">
+            <form>
+                <div class="searchByName">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Pesquise por nome">
+                </div>
+                <div class="searchByCity">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select name="city" id="city">
+                        <option value="0" selected>Selecione sua cidade</option>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                        <option value="salvador">Salvador</option>
+                      </select>
+                      <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                </div>
+                <button class="btnSubmit">Buscar Agora</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="cards-information">
+            <div class="cards-header">
+                <h3>Blocos Recomendados</h3>
+                <div class="list-or-map">
+                    <button class="list">Lista</button>
+                    <button class="map">Mapa</button>
+                </div>
+            </div>
+            <div class="cards-body">
+                <div class="cards">
+                    <div class="card">
+                        <img src="./arquivos/img-1.svg" alt="">
+                        <h4>O Python do vovô não sobe mais</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> São-Paulo - SP </span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./arquivos/img-2.svg" alt="">
+                        <h4>Todo mundo null</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> Florianópolis - SC</span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./arquivos/img-3.svg" alt="">
+                        <h4>Hoje dou exception</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> Curitiba - PR</span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./arquivos/img-4.svg" alt="">
+                        <h4>Não valho nada mas JAVA li</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> São Paulo - SP </span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./arquivos/img-5.svg" alt="">
+                        <h4>Manda Node</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> Salvador - BA </span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./arquivos/img-6.svg" alt="">
+                        <h4>Só no back-end</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> São Paulo - SP </span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./arquivos/img-7.svg" alt="">
+                        <h4>Esse anel não é de Ruby</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> São Paulo - SP </span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./arquivos/img-8.svg" alt="">
+                        <h4>Pimenta no C# dos outros é refresco</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> Rio de Janeiro - RJ </span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./arquivos/img-9.svg" alt="">
+                        <h4>EnCACHE aqui</h4>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                        <span><i class="fa-solid fa-location-dot"></i> Porto Alegre - RS </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
